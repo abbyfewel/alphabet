@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+  char letter;
+  cout << "Enter a letter of the alphabet: ";
+  cin >> letter;
+  // checking to make sure the input is a valid character
+  while ((letter != 'a') && (letter != 'b') && (letter != 'c') && (letter !='d') && (letter != 'e') && (letter != 'f') && (letter != 'g') && (letter != 'h') && (letter != 'i') && (letter != 'j') && (letter != 'k') && (letter != 'l') && (letter != 'm') && (letter != 'n') && (letter != 'o') && (letter != 'p') && (letter != 'q') && (letter != 'r') && (letter != 's') && (letter != 't') && (letter != 'u') && (letter != 'v') && (letter != 'w') && (letter != 'x') && (letter != 'y') && (letter != 'z') && (letter != 'A') && (letter != 'B') && (letter != 'C') && (letter !='D') && (letter != 'E') && (letter !='F') && (letter != 'G') && (letter != 'H') && (letter != 'I') && (letter != 'J') && (letter != 'K') && (letter != 'L') && (letter != 'M') && (letter != 'N') && (letter != 'O') && (letter != 'P') && (letter != 'Q') && (letter != 'R') && (letter != 'S') && (letter != 'T') && (letter != 'U') && (letter != 'V') && (letter != 'W') && (letter != 'X') && (letter != 'Y') && (letter != 'Z')) {
+    cout << "Input is not a valid character. Please enter another input: ";
+    cin >> letter;
+  }
+  // when the input is valid...
+  if ((letter == 'a') || (letter =='e' ) || (letter == 'i') || (letter == 'o') || (letter =='u') || (letter =='A') || (letter == 'E') || (letter == 'I') || (letter == 'O') || (letter == 'U')) { // looking at vowels
+    cout << "This letter is a vowel. ";
+  } else { // looking at consonants
+    cout << "This letter is a consonant. ";
+  }
+}
